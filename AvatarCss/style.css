@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.divclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.avatar_list img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar_list {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    margin-right: 10rem;
+}
+
+.avatar_list div {
+    transition: translate 200ms;
+}
+
+.avatar_list div:hover~div {
+    translate: 2rem;
+}
